@@ -1,0 +1,71 @@
+# Production Environment Configuration
+# Copy this file to .env and configure with your actual values
+
+# ========================================
+# ENVIRONMENT SETTINGS
+# ========================================
+NODE_ENV=production
+PORT=3001
+
+# ========================================
+# DATABASE CONFIGURATION
+# ========================================
+DB_HOST=localhost
+DB_PORT=3306
+DB_USER=republic_cms
+DB_PASSWORD=YOUR_SECURE_PASSWORD_HERE
+DB_NAME=republic_cms_db
+DB_CHARSET=utf8mb4
+DB_CONNECTION_LIMIT=20
+DB_QUEUE_LIMIT=0
+
+# ========================================
+# JWT AUTHENTICATION
+# ========================================
+JWT_SECRET=YOUR_SUPER_SECURE_JWT_SECRET_KEY_HERE_CHANGE_THIS
+JWT_EXPIRES_IN=24h
+
+# ========================================
+# CORS CONFIGURATION
+# ========================================
+CORS_ORIGINS=https://republicaattorneys.co.tz,https://www.republicaattorneys.co.tz
+
+# ========================================
+# FILE UPLOAD CONFIGURATION
+# ========================================
+UPLOAD_PATH=uploads
+MAX_FILE_SIZE=5242880
+
+# ========================================
+# ADMIN CREDENTIALS
+# ========================================
+ADMIN_USERNAME=admin@republicaattorneys.co.tz
+ADMIN_PASSWORD=republica2024
+BCRYPT_ROUNDS=12
+
+# ========================================
+# RATE LIMITING
+# ========================================
+RATE_LIMIT_WINDOW=15
+RATE_LIMIT_MAX=100
+SLOW_DOWN_WINDOW=15
+SLOW_DOWN_DELAY=500
+
+# ========================================
+# REDIS CACHE (OPTIONAL)
+# ========================================
+# REDIS_HOST=localhost
+# REDIS_PORT=6379
+# REDIS_PASSWORD=
+# REDIS_DB=0
+
+# ========================================
+# LOGGING
+# ========================================
+LOG_LEVEL=info
+LOG_FILE=logs/app.log
+
+# ========================================
+# SECURITY
+# ========================================
+TRUST_PROXY=true 
